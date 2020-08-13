@@ -5,8 +5,9 @@ class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
-      var names2 = new List<string>{ "nobita", "bheem", "oggy", "oggy cockroach", "ninja" };
-    foreach (var name in names2)
+      List<string> duplicate_list= new List<string>();
+     duplicate_list.AddRange(names);
+    foreach (var name in duplicate_list)
     {
         if(name.StartsWith("oggy")) {
             Console.WriteLine($"Need to remove {name}!");
