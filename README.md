@@ -7,6 +7,4 @@ This program intends to remove strings containing 'oggy' from a list of strings.
 
 ## Method
 
-The code doesn't work according to the intention. Make it succeed.
-
-Don't forget to update this file after fixing the code.
+The RemoveOggy function cannot manipulate the original list while still iterating through it. So it creates a copy and manipulates the orignal one using duplicate as reference.
