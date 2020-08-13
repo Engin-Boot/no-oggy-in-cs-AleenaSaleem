@@ -5,9 +5,11 @@ class NoOggyChecker
 {
   static void RemoveOggy(List<string> names)
   {
-    foreach (string name in names.Reverse<string>())
+      var names2 = new List<string>{ "nobita", "bheem", "oggy", "oggy cockroach", "ninja" };
+    foreach (string name in names2)
     {
         if(name.StartsWith("oggy")) {
+            Console.WriteLine($"Need to remove {name}!");
             names.Remove(name);
         
         }
