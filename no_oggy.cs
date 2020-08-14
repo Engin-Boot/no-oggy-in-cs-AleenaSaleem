@@ -9,7 +9,7 @@ class NoOggyChecker
      duplicate_list.AddRange(names);
     foreach (var name in duplicate_list)
     {
-        if(name.StartsWith("oggy")) {
+        if(name.Contains("oggy")) {
             Console.WriteLine($"Need to remove {name}!");
             names.Remove(name);
         
